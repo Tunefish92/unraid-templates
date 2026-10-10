@@ -1,0 +1,6 @@
+<CommunityApplications>
+  <Profile>Templates for Tunefish's self-hosted apps: Tapeory (design, store and print Brother P-touch labels from your browser) and Satisfactory Map Renderer (an interactive map of your Satisfactory save game). Each app has its own GitHub repository with the source, documentation and Discussions for questions; please report bugs there as GitHub issues.</Profile>
+  <Icon>https://github.com/Tunefish92.png</Icon>
+  <WebPage>https://github.com/Tunefish92</WebPage>
+  <Forum>https://github.com/Tunefish92/unraid-templates/issues</Forum>
+</CommunityApplications>

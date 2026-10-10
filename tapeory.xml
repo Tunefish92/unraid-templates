@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tapeory</Name>
+  <Repository>tunefish92/tapeory:latest</Repository>
+  <Registry>https://hub.docker.com/r/tunefish92/tapeory</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Tunefish92/Tapeory/discussions</Support>
+  <Project>https://github.com/Tunefish92/Tapeory</Project>
+  <ReadMe>https://github.com/Tunefish92/Tapeory#readme</ReadMe>
+  <Overview>Design, store, and print Brother P-touch labels from your browser. Tapeory is a self-hosted web app for label templates: design a label in the browser editor, add named fields like "Name" or "Room", and fill them in when you print. You can also import existing P-touch Editor .lbx files.&#xD;
+&#xD;
+Requires a MySQL 8 or MariaDB database, for example Unraid's "mariadb" template. Create an empty database and a user, then enter the connection in the web UI on first start.&#xD;
+&#xD;
+Printing supports 34 Brother P-touch (PT) and QL label printers, from the PT-P750W and PT-P900 series to the QL-500 through QL-1115NWB. After the database setup you create the first account, the administrator; more accounts can be added as administrators or users.</Overview>
+  <Category>Productivity: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Tunefish92/unraid-templates/main/tapeory.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/unraid/tapeory.png</Icon>
+  <ExtraSearchTerms>label labels brother ptouch p-touch lbx printer tape</ExtraSearchTerms>
+  <Requires>A MySQL 8 or MariaDB database, e.g. the "mariadb" container from Community Applications.</Requires>
+  <License>MIT</License>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/docs/screenshots/editor.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/docs/screenshots/templates.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/docs/screenshots/print.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/docs/screenshots/printers.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Tapeory/main/docs/screenshots/setup.png</Screenshot>
+
+  <Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Port the Tapeory web UI and API are served on." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+
+  <Config Name="Storage Path" Target="/data" Default="/mnt/user/appdata/tapeory" Mode="rw" Description="Templates, uploads, rendered labels, backups, and the saved database connection. Back this up regularly." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/tapeory</Config>
+
+  <Config Name="Database Connection String" Target="ConnectionStrings__Default" Default="" Mode="" Description="Optional. Leave empty to enter the database connection in the web UI on first start (it's saved to the storage path). If set, e.g. server=192.168.1.10;port=3306;database=tapeory;user=tapeory;password=CHANGE_ME; it overrides that and the setup screen is skipped." Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID that owns the storage path; the app runs as this user. Unraid default: 99 (nobody)." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID that owns the storage path. Unraid default: 100 (users)." Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+
+  <Config Name="Auto Migrate Database" Target="TAPEORY_AUTO_MIGRATE" Default="true" Mode="" Description="Automatically apply pending database migrations on container start." Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+</Container>
