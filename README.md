@@ -6,6 +6,7 @@ Templates for [Unraid](https://unraid.net)'s Community Applications.
 |---|---|---|
 | [Tapeory](templates/tapeory.xml) | Design, store and print Brother P-touch labels from your browser. | [Tunefish92/Tapeory](https://github.com/Tunefish92/Tapeory) |
 | [Satisfactory Map Renderer](templates/satisfactory-map-renderer.xml) | An interactive map of your Satisfactory save game, from a file, a running dedicated server or over SSH. | [Tunefish92/SatisfactoryMapRenderer](https://github.com/Tunefish92/SatisfactoryMapRenderer) |
+| [Tilorama](templates/tilorama.xml) | A fast deep-zoom viewer for gigapixel images: drop in an image and zoom into it like an online map. | [Tunefish92/Tilorama](https://github.com/Tunefish92/Tilorama) |
 
 Install them from the **Apps** tab in Unraid by searching for the app's name.
 
