@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <CommunityApplications>
   <Profile>Templates for Tunefish's self-hosted apps: Tapeory (design, store and print Brother P-touch labels from your browser), Satisfactory Map Renderer (an interactive map of your Satisfactory save game) and Tilorama (a fast deep-zoom viewer for gigapixel images). Each app has its own GitHub repository with the source, documentation and Discussions for questions; please report bugs there as GitHub issues.</Profile>
   <Icon>https://github.com/Tunefish92.png</Icon>
