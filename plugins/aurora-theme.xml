@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>Aurora Theme</Name>
+  <PluginURL>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/Aurora-Theme.plg</PluginURL>
+  <PluginAuthor>Tunefish</PluginAuthor>
+  <Beta>false</Beta>
+  <MinVer>7.2.0</MinVer>
+  <Category>Tools:Utilities</Category>
+  <Overview>A modern theme for the Unraid web interface: new colours and fonts (Inter and Space Grotesk, bundled), rounded cards, pill buttons and redesigned drop-down lists, tab bars and dialogs, in a dark and a light palette with a one-click switch.&#xD;
+&#xD;
+Adds an optional sidebar layout and redesigns the Dashboard, Main (device tables and Array Operation cards with live parity and mover progress), Docker (compact list, application groups, live port check), VMs (details and snapshot buttons), Users, Settings and Tools (search and favourites) and the login page. Includes its own Stats page with a built-in collector, replacing Dynamix System Statistics.&#xD;
+&#xD;
+Updates itself from the install location (can be turned off). If anything looks wrong, add ?aurora=off to any address to switch it off in that browser.</Overview>
+  <Icon>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/icon.png</Icon>
+  <IconFA>paint-brush</IconFA>
+  <Project>https://github.com/Tunefish92/Aurora-Theme</Project>
+  <Support>https://github.com/Tunefish92/Aurora-Theme/issues</Support>
+  <ReadMe>https://github.com/Tunefish92/Aurora-Theme#readme</ReadMe>
+  <License>MIT</License>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/screenshots/dashboard-dark.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/screenshots/dashboard-light.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/screenshots/array-operation.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/screenshots/settings-favourites.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/main/docs/screenshots/login.png</Screenshot>
+  <ExtraSearchTerms>theme dark light design sidebar layout webgui appearance aurora</ExtraSearchTerms>
+</Containers>
