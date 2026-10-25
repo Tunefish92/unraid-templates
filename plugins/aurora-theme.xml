@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Name>Aurora Theme</Name>
-  <PluginURL>https://github.com/Tunefish92/Aurora-Theme/releases/latest/download/Aurora-Theme.plg</PluginURL>
+  <PluginURL>https://raw.githubusercontent.com/Tunefish92/Aurora-Theme/release/Aurora-Theme.plg</PluginURL>
   <PluginAuthor>Tunefish</PluginAuthor>
   <Beta>false</Beta>
   <MinVer>7.2.0</MinVer>
